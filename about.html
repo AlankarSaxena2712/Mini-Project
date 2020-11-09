@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-    <title>Home - CodeTalks</title>
+    <title>About - CodeTalks</title>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 
     <style>
         * {
@@ -24,7 +26,8 @@
             background: rgb(178, 189, 189);
         }
 
-        a, a:hover {
+        a,
+        a:hover {
             text-decoration: none;
         }
 
@@ -63,9 +66,6 @@
             color: yellow;
         }
     </style>
-    <!-- <script>
-        window.onload(typeWriter());
-    </script> -->
 
 </head>
 
@@ -102,88 +102,60 @@
     </nav>
 
 
-    <div class="container mt-4">
-
-        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-            <div class="col-12 px-0">
-              <h1 class="display-4 font-italic text-center">CodeTalks</h1>
-              <p id="logo" class="text-center h3" style="color: rgb(184, 119, 236); font-family:monospace;"></p>
-              <script>
-                    var i = 0;
-                    var txt = "Where someone's code talk to someone else's code.";
-
-                    window.onload = function typeWriter() {
-                        if (i < txt.length) {
-                            document.getElementById("logo").innerHTML += txt.charAt(i);
-                            i++;
-                            setTimeout(typeWriter, 70);
+    <div class="bg-gray-500">
+        <div class="container py-5">
+            <div class="row h-100 align-items-center py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-4 font-bold text-purple-700">CodeTalks</h1>
+                    <h4 id="logo" class="mb-0 h4 text-indigo-600 font-bold" style="font-family: 'Courier New', Courier, monospace;"></h4>
+                    <script>
+                        var i = 0;
+                        var txt = "Where someone's code talk to someone else's code.";
+    
+                        window.onload = function typeWriter() {
+                            if (i < txt.length) {
+                                document.getElementById("logo").innerHTML += txt.charAt(i);
+                                i++;
+                                setTimeout(typeWriter, 70);
+                            }
                         }
-                    }
-              </script>
-            </div>
-          </div>
-
-
-        <div class="row mb-2">
-            <div class="col-md-6">
-                <div class="row no-gutters bg-light border rounded overflow-hidden flex-md-row mb-4 shadow shadow-success h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Question Field</strong>
-                        <h3 class="mb-0">Question Topic</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-2">Question Description ametd consectetur adipisicing elit. Ipsa doloribus sequi aspernatur nisi, exercitationem laudantium non aperiam ea, reprehenderit voluptati</p>
-                        <a href="registration.html" class="stretched-link h5 font-weight-bold">Continue reading</a>
-                    </div>
+                    </script>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://res.cloudinary.com/mhmd/image/upload/v1556834136/illus_kftyh4.png" alt=""
+                        class="img-fluid">
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="row no-gutters bg-light border rounded overflow-hidden flex-md-row mb-4 shadow shadow-success h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Question Field</strong>
-                        <h3 class="mb-0">Question Topic</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-2">Question Description ametd consectetur adipisicing elit. Ipsa doloribus sequi aspernatur nisi, exercitationem laudantium non aperiam ea, reprehenderit voluptati</p>
-                        <a href="registration.html" class="stretched-link h5 font-weight-bold">Continue reading</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row no-gutters bg-light border rounded overflow-hidden flex-md-row mb-4 shadow shadow-success h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Question Field</strong>
-                        <h3 class="mb-0">Question Topic</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-2">Question Description ametd consectetur adipisicing elit. Ipsa doloribus sequi aspernatur nisi, exercitationem laudantium non aperiam ea, reprehenderit voluptati</p>
-                        <a href="registration.html" class="stretched-link h5 font-weight-bold">Continue reading</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row no-gutters bg-light border rounded overflow-hidden flex-md-row mb-4 shadow shadow-success h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Question Field</strong>
-                        <h3 class="mb-0">Question Topic</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-2">Question Description ametd consectetur adipisicing elit. Ipsa doloribus sequi aspernatur nisi, exercitationem laudantium non aperiam ea, reprehenderit voluptati</p>
-                        <a href="registration.html" class="stretched-link h5 font-weight-bold">Continue reading</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row no-gutters bg-light border rounded overflow-hidden flex-md-row mb-4 shadow shadow-success h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Question Field</strong>
-                        <h3 class="mb-0">Question Topic</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-2">Question Description ametd consectetur adipisicing elit. Ipsa doloribus sequi aspernatur nisi, exercitationem laudantium non aperiam ea, reprehenderit voluptati</p>
-                        <a href="registration.html" class="stretched-link h5 font-weight-bold">Continue reading</a>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
 
+    <div class="bg-gray-400 py-5">
+        <div class="container py-5">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+                    <h2 class="font-weight-bold h5 text-blue-700">
+                        Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicingelit, seddo eiusmod temporincididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae laboriosa
+                    </h2>
+                </div>
+                <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2">
+                    <img src="https://res.cloudinary.com/mhmd/image/upload/v1556834139/img-1_e25nvh.jpg" alt="" class="img-fluid mb-4 mb-lg-0">
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+                    <h2 class="font-weight-bold h5 text-blue-700">
+                        Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicingelit, seddo eiusmod temporincididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo vitae laboriosa
+                    </h2>
+                </div>
+                <div class="col-lg-5 px-5 mx-auto">
+                    <img src="https://res.cloudinary.com/mhmd/image/upload/v1556834136/img-2_vdgqgn.jpg" alt=""
+                        class="img-fluid mb-4 mb-lg-0">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Team Modal -->
