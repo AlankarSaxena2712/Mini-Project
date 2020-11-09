@@ -12,6 +12,8 @@
 
     <title>Home - CodeTalks</title>
 
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
     <style>
         * {
             padding: 0;
@@ -24,7 +26,8 @@
             background: rgb(178, 189, 189);
         }
 
-        a, a:hover {
+        a,
+        a:hover {
             text-decoration: none;
         }
 
@@ -102,13 +105,12 @@
     </nav>
 
 
-    <div class="container mt-4">
-
-        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="container">
+        <div class="jumbotron p-4 p-md-5 text-white bg-gray-800 rounded">
             <div class="col-12 px-0">
-              <h1 class="display-4 font-italic text-center">CodeTalks</h1>
-              <p id="logo" class="text-center h3" style="color: rgb(184, 119, 236); font-family:monospace;"></p>
-              <script>
+                <h1 class="display-4 font-italic text-center">CodeTalks</h1>
+                <p id="logo" class="text-center h3" style="color: rgb(184, 119, 236); font-family:monospace;"></p>
+                <script>
                     var i = 0;
                     var txt = "Where someone's code talk to someone else's code.";
 
@@ -119,70 +121,36 @@
                             setTimeout(typeWriter, 70);
                         }
                     }
-              </script>
+                </script>
             </div>
-          </div>
-
-
-        <div class="row mb-2">
-            <div class="col-md-6">
-                <div class="row no-gutters bg-light border rounded overflow-hidden flex-md-row mb-4 shadow shadow-success h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Question Field</strong>
-                        <h3 class="mb-0">Question Topic</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-2">Question Description ametd consectetur adipisicing elit. Ipsa doloribus sequi aspernatur nisi, exercitationem laudantium non aperiam ea, reprehenderit voluptati</p>
-                        <a href="registration.html" class="stretched-link h5 font-weight-bold">Continue reading</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row no-gutters bg-light border rounded overflow-hidden flex-md-row mb-4 shadow shadow-success h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Question Field</strong>
-                        <h3 class="mb-0">Question Topic</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-2">Question Description ametd consectetur adipisicing elit. Ipsa doloribus sequi aspernatur nisi, exercitationem laudantium non aperiam ea, reprehenderit voluptati</p>
-                        <a href="registration.html" class="stretched-link h5 font-weight-bold">Continue reading</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row no-gutters bg-light border rounded overflow-hidden flex-md-row mb-4 shadow shadow-success h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Question Field</strong>
-                        <h3 class="mb-0">Question Topic</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-2">Question Description ametd consectetur adipisicing elit. Ipsa doloribus sequi aspernatur nisi, exercitationem laudantium non aperiam ea, reprehenderit voluptati</p>
-                        <a href="registration.html" class="stretched-link h5 font-weight-bold">Continue reading</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row no-gutters bg-light border rounded overflow-hidden flex-md-row mb-4 shadow shadow-success h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Question Field</strong>
-                        <h3 class="mb-0">Question Topic</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-2">Question Description ametd consectetur adipisicing elit. Ipsa doloribus sequi aspernatur nisi, exercitationem laudantium non aperiam ea, reprehenderit voluptati</p>
-                        <a href="registration.html" class="stretched-link h5 font-weight-bold">Continue reading</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="row no-gutters bg-light border rounded overflow-hidden flex-md-row mb-4 shadow shadow-success h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static">
-                        <strong class="d-inline-block mb-2 text-primary">Question Field</strong>
-                        <h3 class="mb-0">Question Topic</h3>
-                        <div class="mb-1 text-muted">Nov 12</div>
-                        <p class="card-text mb-2">Question Description ametd consectetur adipisicing elit. Ipsa doloribus sequi aspernatur nisi, exercitationem laudantium non aperiam ea, reprehenderit voluptati</p>
-                        <a href="registration.html" class="stretched-link h5 font-weight-bold">Continue reading</a>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </div>
+
+<div class="container">
+
+    <section class="text-gray-500 bg-gray-900 body-font relative">
+        <div class="absolute inset-0 bg-gray-900">
+            <iframe title="map" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.851332229748!2d77.44337981445668!3d28.634217490756924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee22c60837b7%3A0x7c35343eceb7bde0!2sABES%20Engineering%20College!5e0!3m2!1sen!2sin!4v1604910897698!5m2!1sen!2sin" style="filter: grayscale(0.7) contrast(1.9) opacity(0.8);"></iframe>
+        </div>
+        <div class="container px-5 py-24 mx-auto flex">
+            <div class="lg:w-1/3 md:w-1/2 bg-gray-900 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10">
+                <h2 class="text-white mb-1 h2">Contact Us</h2>
+                <p class="leading-relaxed mb-2 text-gray-500">Feel free to share your views or need to contact us then you can do it here.</p>
+                <form action="" method="post">
+                    <div class="relative mb-1">
+                        <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                    <div class="relative mb-4">
+                        <label for="message" class="leading-7 text-sm text-gray-400">Message</label>
+                        <textarea id="message" name="message" placeholder="Message" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                    <button type="submit" class="text-white bg-indigo-700 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
 
 
 
